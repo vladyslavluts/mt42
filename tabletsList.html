@@ -1,0 +1,11 @@
+<section layout="row">  <div ng-repeat="item in items | filter:{category:'Tablets'}">
+	<section layout="column">
+    <div>
+  <b>{{item.name}}</b>
+	<p>Цена: {{item.price}} $</p>
+	<p>Производитель: {{item.company}}</p>
+	<md-button class="md-primary" ng-click="buy(item)">В корзину</md-button> 
+	<br><label>{{(item.isInBasket>0)?"Товар добавлен":""}}</label>
+    </div>
+      </section>
+    </section>

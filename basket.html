@@ -1,0 +1,8 @@
+<div ng-repeat="item in items | filter:{isInBasket:1}">
+<b>{{item.name}}</b>
+<p>Цена: {{item.price}} $</p>
+<p>Производитель: {{item.company}}</p>
+ <p>Количество:</p>
+<md-button class="md-primary" ng-click="buyDown(item)">-</md-button>	<label>{{item.basket}}</label>
+	<md-button class="md-primary" ng-click="buyUp(item)">+</md-button>
+    </div>
